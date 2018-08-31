@@ -56,9 +56,7 @@ def runner
   until total > 21
     total = hit?(total)
     display_card_total(total)
-    if hit?(total) > 21
-      end_game(total)
-    end
   end  
+  end_game(total)
 end
     
